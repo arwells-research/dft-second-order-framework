@@ -1,0 +1,313 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\geometry{margin=1in}
+
+\title{Second-Order Organization as Constraint Geometry Over Admissible Trajectories}
+\author{A.\ R.\ Wells \\ Dual-Frame Research Group}
+\date{January 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Many physical and chemical systems exhibit behavior that depends not only on instantaneous state but on the ordering and history of interactions. Such effects are commonly treated as special mechanisms---resonance, hysteresis, allostery, or cyclic gating---without a unifying organizational framework.  
+Here we introduce a formal notion of \emph{second-order organization}, defined not by stored representations or hidden state variables, but by a geometry of \emph{admissible trajectories} constrained by embodiment. We define a second-order space $\Sigma_2(E)$ as the set of trajectories viable under an embodiment-indexed admissibility predicate, and identify noncommutativity of transformations and holonomy as operational hallmarks of order relevance.  
+We show that many familiar molecular phenomena instantiate \emph{proto-second-order organization}: they exhibit ordering effects without stabilizing organizational modes. A minimal generative model---constraint-mediated, phase-gated transduction---is presented to unify these cases without invoking new physics. The framework clarifies continuity from first-order dynamics to organized systems, sharpens the distinction between transient and maintained organization, and provides concrete criteria for when state-based modeling is insufficient.
+\end{abstract}
+
+\section{Introduction}
+
+Standard dynamical descriptions focus on instantaneous state evolution. While sufficient for many systems, this perspective becomes strained when outcomes depend on the ordering of interactions or on the path by which a state is reached, even when instantaneous configurations appear identical.
+
+Examples include sequence-dependent molecular binding, hysteresis in conformational transitions, phase-gated molecular machines, and selective resonance phenomena. These effects are typically explained mechanistically, yet remain conceptually fragmented.
+
+This paper proposes a unifying organizational perspective: such systems exhibit \emph{second-order organization}, in which trajectories themselves---not instantaneous states---are the primary objects of constraint and relevance.
+
+\section{First-Order and Second-Order Organization}
+
+\subsection{First-order systems}
+
+A first-order system is one whose future evolution is fully determined (up to noise) by its instantaneous state. Transformations commute or can be reduced to state augmentation, and history is rapidly erased by dissipation or mixing.
+
+First-order systems may be complex, nonlinear, or stochastic, but they lack persistent trajectory-level identity.
+
+\subsection{Second-order systems}
+
+A second-order system is one in which future behavior depends on which \emph{admissible trajectory} led to the present state, and this dependence cannot be eliminated by any instantaneous state description available within the embodiment.
+
+Second-order organization does not require stored memory, representations, or hidden variables. Instead, it arises from persistent constraints on which trajectories remain viable.
+
+\section{The Second-Order Space $\Sigma_2$}
+
+Let $\gamma$ denote a candidate trajectory and $E$ an embodiment class specifying noise, dissipation, coupling constraints, and resource limits. Define an admissibility predicate
+\[
+\mathrm{Adm}(\gamma; E) \in \{0,1\}.
+\]
+
+The second-order space is defined as
+\[
+\Sigma_2(E) = \{\gamma \mid \mathrm{Adm}(\gamma; E) = 1\}.
+\]
+
+$\Sigma_2$ is not a state space, hidden dimension, or repository. It is a \emph{constraint geometry over viable trajectories}, explicitly indexed by embodiment.
+
+\subsection{What admissibility checks}
+
+The predicate $\mathrm{Adm}(\gamma;E)$ is not a single energetic criterion. Rather, it is a composite viability condition that may include:
+
+\begin{itemize}
+\item energetic feasibility (no violation of conservation laws),
+\item structural persistence (the system remains intact along $\gamma$),
+\item coupling constraints (interactions occur only in specific configurations or phases),
+\item temporal coherence (gated interactions persist long enough to be effective),
+\item embodiment limits (noise tolerance, environmental coupling).
+\end{itemize}
+
+Two trajectories may share identical endpoints and energy budgets, yet differ in admissibility because only one enters regions where interactions become effective. Such distinctions are invisible to state-based descriptions.
+
+\section{Hallmarks of Order Relevance}
+
+\subsection{Noncommutativity of transformations}
+
+Let $\tau_1$ and $\tau_2$ be admissible transformations. A system exhibits order relevance if
+\[
+\mathrm{Outcome}(\tau_2 \circ \tau_1) \neq \mathrm{Outcome}(\tau_1 \circ \tau_2),
+\]
+despite both compositions being admissible.
+
+This noncommutativity indicates that ordering matters beyond instantaneous state.
+
+\subsection{Holonomy and trajectory memory}
+
+Holonomy occurs when a closed loop in first-order configuration space returns the system to the same state while altering its future admissibility.
+
+This constitutes \emph{memory without representation}: history encoded as path geometry rather than stored state.
+
+Importantly, not all hysteresis implies second-order organization. Simple hysteresis loops that immediately relax once driving ceases are classified as \emph{proto-second-order}. Holonomy becomes second-order relevant only when it alters future admissibility in a persistent manner.
+
+\section{Proto-Second-Order Systems}
+
+Many systems exhibit noncommutativity or holonomy without stabilizing organizational modes. We classify these as \emph{proto-second-order systems}.
+
+Proto-second-order systems:
+\begin{itemize}
+\item possess nontrivial admissibility geometry,
+\item exhibit ordering effects,
+\item but do not act to preserve organizational modes against noise.
+\end{itemize}
+
+Individual molecules and molecular machines fall naturally into this category.
+
+\subsection{Operational threshold for true second order}
+
+A system transitions from proto- to true second-order organization when:
+
+\begin{enumerate}
+\item organizational modes persist longer than passive decay times,
+\item the system expends resources to maintain admissibility structure,
+\item maintenance trajectories are themselves admissible only because the organization exists.
+\end{enumerate}
+
+This creates a closed organizational loop and provides a sharp operational boundary.
+
+\section{A Unifying Generative Model}
+
+Let $x(t)$ denote first-order variables and $\sigma(t)$ an organizational coordinate (phase, basin, or mode). Consider dynamics
+\[
+\dot{x} = f(x) + G(\sigma)\,u(x) + \eta(t),
+\]
+\[
+\dot{\sigma} = \Omega(x,\sigma) + \xi(t),
+\]
+where the gate $G(\sigma)$ is near zero except in narrow regions.
+
+This structure yields selective responsiveness, phase-localized work, sequence dependence, and hysteresis. No new physics is assumed; only constraint-mediated transduction under embodiment.
+
+\subsection{Origin of gating and constraint-induced selectivity}
+
+The generative model assumes a gating function $G(\sigma)$ that is near zero over most
+of the organizational coordinate space and near unity only in narrow regions.
+This gating is not introduced as an independent mechanism, nor does it invoke new
+physics. Rather, it arises generically from constrained coupling under embodiment.
+
+In many physical systems, interactions are effective only within restricted regions
+of configuration or phase space. Examples include resonance bandwidths, steric
+conformational alignments, tunneling windows, and alignment-dependent couplings.
+Outside these regions, injected energy is rapidly dissipated or fails to couple
+into the relevant degrees of freedom.
+
+Even when coupling is broad in principle, dissipation and noise select for narrow
+regions in which coherence persists long enough for interaction to be effective.
+In this sense, dissipation itself sharpens gating: trajectories that fail to enter
+these regions become inadmissible under the embodiment constraints.
+
+Selection or design may further sharpen gates in biological or engineered systems,
+but such processes are not required for the emergence of gating. The $\Sigma_2$
+framework treats gating as a geometric consequence of constrained interaction,
+not as an additional assumption.
+
+Thus $G(\sigma)$ should be understood as a coarse-grained representation of where
+interaction is physically effective within the admissible trajectory geometry.
+
+\subsection{Admissible trajectories in a minimal stochastic toy}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{08_TOY_MODELS/fig_sigma2_toy_schematic.pdf}
+\caption{
+Schematic of phase-gated admissible trajectories in the minimal stochastic toy.
+(a) A first-order coordinate $x(t)$ evolves in a symmetric double-well potential and undergoes stochastic crossings between wells.
+(b) A phase variable $\phi(t)\in S^1$ defines a narrow gate (shaded region) where coupling becomes effective.
+(c) Crossings are not forced by the gate; instead, a trajectory is admissible only if a crossing occurs while $\phi$ lies within the gate and remains there for a minimum duration.
+This construction illustrates how viability depends on trajectory history rather than instantaneous state, enabling second-order organization without changes to base crossing rates or dissipation.
+}
+\label{fig:sigma2-toy-schematic}
+\end{figure} 
+
+Figure~\ref{fig:sigma2-toy-schematic} summarizes the construction.
+
+The example is deliberately minimal and computational rather than analytical, serving as an operational grounding artifact rather than a mechanistic model of any specific physical system.
+
+To demonstrate that the $\Sigma_2$ diagnostics proposed here are operational rather than purely conceptual, we constructed a minimal stochastic toy system exhibiting trajectory-level admissibility under controlled conditions. The purpose of this example is not physical realism, but to show that second-order viability can be measured, quantified, and distinguished from first-order dynamics in the simplest possible setting.
+
+The toy consists of an overdamped Langevin coordinate $x(t)$ evolving in a symmetric double-well potential, coupled to an angular phase variable $\phi(t)$ undergoing rotation and diffusion. A narrow phase ``gate'' is defined near a fixed angle $\phi\approx\pi$. Crossings between wells occur stochastically and are not forced by the gate. Instead, a trajectory is deemed \emph{admissible} only if a crossing occurs while $\phi$ lies within the gate and remains there for a minimum duration (a temporal coherence requirement). This definition enforces path dependence rather than endpoint selection.
+
+Two regimes are compared under identical stochastic forcing using common random numbers: a \emph{proto} regime in which $\phi$ diffuses freely, and a \emph{true} regime in which weak feedback stabilizes $\phi$ near the gate center at a measurable maintenance cost. Crucially, the base crossing probability and overdamped dissipation remain nearly unchanged between regimes. What changes is the fraction of time trajectories spend in the gate and, consequently, the probability that otherwise-random crossings become admissible.
+
+Empirically, the increase in admissible probability satisfies the approximate decomposition
+\[
+\Delta p_{\mathrm{adm}} \;\approx\; p_{\mathrm{cross}} \cdot \Delta(\text{gate occupancy}),
+\]
+within statistical uncertainty. This relationship is a direct structural prediction of the $\Sigma_2$ framework: viability gains arise from increased conditional accessibility to gated regions, rather than amplification of first-order dynamics or energy injection.
+
+The stabilized regime accordingly exhibits a clear increase in admissible trajectories at nonzero maintenance cost, while dissipation and raw crossing rates remain effectively constant.
+
+The toy also exhibits ordering sensitivity: small interventions applied in different orders (phase shift versus position impulse) lead to measurably different admissibility outcomes, demonstrating noncommutativity at the trajectory level. This effect persists under common random numbers and is modulated—but not eliminated—by stabilization. This ordering sensitivity reflects the underlying admissibility geometry of $\Sigma_2(E)$ and cannot be reduced to instantaneous state differences.
+
+Full details of the model, diagnostics, parameter sweeps, and noncommutativity tests are provided in a companion computational note and reference implementation.\footnote{Reference implementation available in the project repository (\texttt{toy\_md\_viability\_sigma2.py}).} The role of this example is strictly demonstrative: it serves as an existence proof that $\Sigma_2$ organization can be detected and quantified in a controlled stochastic setting, motivating the broader theoretical framework developed here.
+
+\section{Predictive and Design Implications}
+
+The predictive value of $\Sigma_2$ lies not in new forces, but in identifying when state-based compression will fail. If ordering effects persist across admissible perturbations, no finite instantaneous state closure will capture system behavior robustly.
+
+This provides early diagnostic and design guidance in:
+\begin{itemize}
+\item synthetic molecular systems,
+\item engineered dynamical devices,
+\item low-power phase-gated control architectures,
+\item boundary analysis of biological organization.
+\end{itemize}
+
+\section{Conclusion}
+
+Second-order organization is best understood as constraint geometry over admissible trajectories, not as hidden state or stored memory. Many known molecular phenomena instantiate this structure in proto-form.
+
+By formalizing admissibility, noncommutativity, and holonomy, the $\Sigma_2$ framework unifies disparate trajectory-dependent effects and provides operational criteria for when trajectories, rather than states, are the correct objects of description.
+
+Systems with intrinsic phase structure and sustained energy throughput—such as circadian oscillators, kinase cascades, or multi-state molecular motors—appear particularly well suited for analysis within this framework and may clarify where proto-second-order organization transitions into true organizational maintenance.
+
+\appendix
+\section*{Appendix A: Worked Example — Phase-Gated Oscillator}
+
+This appendix provides a concrete instantiation of the $\Sigma_2$ framework using a
+minimal phase-gated oscillator. The purpose is not biological realism, but to show
+explicitly how admissibility, noncommutativity, and the proto--true second-order
+boundary are evaluated in practice. A companion computational toy implementing the same admissibility logic and diagnostics is provided in the repository.
+
+\subsection*{A.1 System and embodiment}
+
+Let the first-order variable be $x(t) \in \mathbb{R}$ and the organizational coordinate
+be a phase $\phi(t) \in S^1$. Dynamics are given by
+\[
+\dot{x} = -\alpha x + G(\phi)(\beta - \gamma x) + \eta(t),
+\]
+\[
+\dot{\phi} = \omega + \xi(t),
+\]
+where $\alpha,\beta,\gamma,\omega > 0$ and $\eta,\xi$ represent bounded noise.
+
+The embodiment $E$ is defined by:
+\begin{itemize}
+\item bounded noise amplitudes,
+\item continuous energy throughput sustaining phase rotation,
+\item dissipation preventing unbounded growth,
+\item finite coherence time for $\phi$ in the absence of stabilization.
+\end{itemize}
+
+\subsection*{A.2 Admissibility}
+
+A trajectory $\gamma = (x(t),\phi(t))$ is admissible if:
+\begin{enumerate}
+\item phase coherence remains above a threshold for at least one gating window,
+\item $x(t)$ remains within bounded structural limits,
+\item gated interaction occurs before dissipation erases its effect.
+\end{enumerate}
+
+Trajectories with identical endpoints and energy budgets may differ in admissibility
+depending on whether they enter the gated phase window.
+
+\subsection*{A.3 Noncommutativity}
+
+Define two admissible transformations:
+\begin{itemize}
+\item $\tau_1$: a phase shift $\phi \mapsto \phi + \Delta$,
+\item $\tau_2$: an impulse $x \mapsto x + \delta$.
+\end{itemize}
+
+Because amplification occurs only when $\phi$ lies within the gate,
+\[
+\mathrm{Outcome}(\tau_2 \circ \tau_1) \neq \mathrm{Outcome}(\tau_1 \circ \tau_2)
+\]
+for a wide range of $\Delta,\delta$, demonstrating order relevance without stored
+memory.
+
+\subsection*{A.4 Proto- vs.\ true second-order regimes}
+
+In the proto-second-order regime, $\phi$ evolves freely and dephases under noise.
+Ordering effects are present but wash out over time.
+
+In the true second-order regime, additional dynamics stabilize $\phi$ (e.g.\ weak
+phase correction proportional to deviation from a target phase). This stabilization
+requires energy expenditure and preserves gating across cycles.
+
+The transition occurs when:
+\begin{enumerate}
+\item phase coherence exceeds passive decay times,
+\item energy is expended to maintain coherence,
+\item maintenance dynamics are themselves admissible only because coherence exists.
+\end{enumerate}
+
+This satisfies the operational threshold defined in Section~5.1.
+
+\subsection*{A.5 Failed Markov closure}
+
+Two histories may converge to the same instantaneous $x(t_0)$ while differing in
+$\phi(t_0)$. Subsequent evolution diverges systematically despite identical state
+descriptions.
+
+No finite augmentation of instantaneous state robustly captures this divergence
+across admissible perturbations, demonstrating failure of Markov closure and the
+necessity of trajectory-level description.
+
+\subsection*{A.6 Interpretation}
+
+This minimal example demonstrates that second-order organization can be identified
+without biological assumptions. Admissibility, noncommutativity, and organizational
+maintenance are operationally evaluable, and the proto--true distinction is sharp.
+
+The example illustrates how $\Sigma_2$ functions as a diagnostic framework for when
+trajectories, rather than states, are the correct objects of description.
+
+An analogous analysis applies to conformational gating in allosteric enzymes, where substrate binding in one configuration alters subsequent binding affinity—an effect that remains proto-second-order unless additional cellular mechanisms actively maintain conformational availability.
+
+\section*{References}
+
+Wells, A. R. (2026).
+\emph{Second-Order Organization as Constraint Geometry Over Admissible Trajectories}.
+Zenodo.
+\url{https://doi.org/10.5281/zenodo.18124930}
+
+\end{document}

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: report
+title: "Second-Order Organization as Constraint Geometry Over Admissible Trajectories"
+authors:
+  - family-names: "Wells"
+    given-names: "A. R."
+license: "CC-BY-4.0"
+year: 2026
+doi: "10.5281/zenodo.18124930"
+url: "https://doi.org/10.5281/zenodo.18124930"
+repository-code: "https://github.com/arwells-research/dft-second-order-framework
