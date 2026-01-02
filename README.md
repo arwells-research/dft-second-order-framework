@@ -1,7 +1,7 @@
 # Dual-Frame Theory: Second-Order Framework
 
 **Status:** Foundational / Axiomatic (with operational grounding)  
-**Version:** v0.2.0  
+**Version:** v0.2.1  
 **Scope:** Conceptual kernel + minimal operational demonstration  
 **Audience:** Researchers in theoretical biology, complex systems, dynamical systems, foundations of cognition, and foundational AI
 
@@ -16,8 +16,8 @@ It formalizes:
 - what is meant by **first-, second-, and third-order organization**
 - how second-order structure differs categorically from first-order spacetime dynamics
 - how second-order constraint spaces (**Σ₂**) exist **without acting as repositories**
-- how embodiment grounds second-order dynamics without mysticism or reductionism
-- how admissible trajectories replace state-based sufficiency when ordering matters
+- how embodiment grounds second-order organization without mysticism or reductionism
+- how **admissible trajectories** replace instantaneous state sufficiency when ordering matters
 
 In addition to the formal framework, this repository includes a **minimal operational grounding artifact** demonstrating that Σ₂ diagnostics are measurable and behave as predicted in a controlled stochastic system.
 
@@ -58,7 +58,7 @@ This framework is built on the following non-negotiable commitments:
 4. Second order is not refined first-order time  
 5. No disembodied repositories of form, memory, or ideas  
 6. Embodiment is required for causal efficacy  
-7. Conservation laws are respected at the trajectory level  
+7. Conservation laws are respected **at the trajectory level**
 
 Violating any of these invalidates compatibility.
 
@@ -67,10 +67,10 @@ Violating any of these invalidates compatibility.
 ## Structure of the framework
 
 - **First order (S-frame):** state evolution indexed by parametric time
-- **Second order (Σ₂ / T-frame):** admissible trajectory geometry with ordering relevance
-- **Third order:** representation of second-order structure itself
+- **Second order (Σ₂ / T-frame):** geometry of admissible trajectories with ordering relevance
+- **Third order:** representation *of* second-order structure itself
 
-Only first-order dynamics admit complete instantaneous-state closure.
+Only first-order dynamics admit complete instantaneous-state closure in principle.
 
 ---
 
@@ -99,6 +99,10 @@ Only first-order dynamics admit complete instantaneous-state closure.
     │   ├── toy_md_viability_sigma2.py
     │   └── toy_md_viability_sigma2_note.md
     ├── second_order_organization_admissible_trajectories.tex
+    ├── docs
+    │   └── position
+    │       ├── POSITION_RELATION_TO_BIOLOGICAL_COMPUTATIONALISM.md
+    │       └── POSITION_RELATION_TO_ENACTIVISM_AND_DYNAMICAL_SYSTEMS.md
     ├── make_paper.sh
     ├── LICENSE
     └── PAPER_LICENSE.md
@@ -123,11 +127,13 @@ The paper includes:
 
 ## Build the paper
 
-./make_paper.sh
+Run:
+
+    ./make_paper.sh
 
 Output:
 
-build/second_order_organization_admissible_trajectories.pdf
+    build/second_order_organization_admissible_trajectories.pdf
 
 ---
 
@@ -138,6 +144,25 @@ build/second_order_organization_admissible_trajectories.pdf
 - **PATCH** versions clarify language only
 
 Axioms may not be silently edited.
+
+---
+
+## Position notes (contextual, non-formal)
+
+This repository includes a small set of **position notes** under `docs/position/` that clarify how the Σ₂ framework relates to adjacent theoretical traditions.
+
+These documents are:
+- **not part of the Σ₂ formalism**,  
+- **not required to use or apply the framework**,  
+- **not normative or prescriptive**.
+
+They exist solely to prevent category errors and to support accurate cross-framework interpretation.
+
+Current position notes include:
+- `POSITION_RELATION_TO_BIOLOGICAL_COMPUTATIONALISM.md`
+- `POSITION_RELATION_TO_ENACTIVISM_AND_DYNAMICAL_SYSTEMS.md`
+
+No definitions, axioms, or commitments originate in these documents.
 
 ---
 
@@ -153,6 +178,6 @@ Reuse is permitted with attribution. No solicitation or endorsement is implied.
 
 If you use this work, please cite it as:
 
-> Wells, A. R. (2026). Second-Order Organization as Constraint Geometry Over Admissible Trajectories. Dual-Frame Research Group. Zenodo. https://doi.org/10.5281/zenodo.18124930
+> Wells, A. R. (2026). *Second-Order Organization as Constraint Geometry Over Admissible Trajectories*. Dual-Frame Research Group. Zenodo. https://doi.org/10.5281/zenodo.18124930
 
 This work is licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
