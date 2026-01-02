@@ -76,27 +76,32 @@ Only first-order dynamics admit complete instantaneous-state closure.
 
 ## Repository layout
 
-dft-second-order-framework/
-  README.md
-  00_SCOPE_AND_STATUS.md
-  01_PRIMITIVES_AND_AXIOMS.md
-  02_ORDERS_OF_ORGANIZATION.md
-  03_SECOND_ORDER_SPACE_SIGMA2.md
-  04_EMBODIMENT_AND_INSTANTIATION.md
-  05_MIND_2ND_VS_3RD_ORDER.md
-  06_SHARED_STRUCTURE_NO_REPOSITORIES.md
-  07_FORMAL_CONSTRUCTIONS/
-    graph_model.md
-    manifold_model.md
-    fiber_bundle_model.md
-    holonomy_example.md
-  08_TOY_MODELS/
-    toy_md_viability_sigma2.py
-    toy_md_viability_sigma2_note.md
-    fig_sigma2_toy_schematic.pdf
-  second_order_organization_admissible_trajectories.tex
-  make_paper.sh
-  LICENSE
+    dft-second-order-framework/
+    ├── README.md
+    ├── 00_SCOPE_AND_STATUS.md
+    ├── 01_PRIMITIVES_AND_AXIOMS.md
+    ├── 02_ORDERS_OF_ORGANIZATION.md
+    ├── 03_SECOND_ORDER_SPACE_SIGMA2.md
+    ├── 04_EMBODIMENT_AND_INSTANTIATION.md
+    ├── 05_MIND_2ND_VS_3RD_ORDER.md
+    ├── 06_SHARED_STRUCTURE_NO_REPOSITORIES.md
+    ├── 07_FORMAL_CONSTRUCTIONS/
+    │   ├── fiber_bundle_model.md
+    │   ├── graph_model.md
+    │   ├── holonomy_example.md
+    │   └── manifold_model.md
+    ├── 08_TOY_MODELS/
+    │   ├── fig_sigma2_toy_schematic.pdf
+    │   ├── fig_sigma2_toy_schematic.png
+    │   ├── fig_sigma2_toy_schematic.py
+    │   ├── oscillator_phase_gate.md
+    │   ├── oscillator_phase_gate_demo.py
+    │   ├── toy_md_viability_sigma2.py
+    │   └── toy_md_viability_sigma2_note.md
+    ├── second_order_organization_admissible_trajectories.tex
+    ├── make_paper.sh
+    ├── LICENSE
+    └── PAPER_LICENSE.md
 
 Only files that are **structurally locked** or **diagnostically definitive** should live here.
 
