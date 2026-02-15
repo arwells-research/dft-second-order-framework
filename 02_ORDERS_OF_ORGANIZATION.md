@@ -1,6 +1,6 @@
 # Orders of Organization
 
-**Document role:** Normative definitions  
+**Document role:** Normative definitions (Σ₂ structural layer only)  
 **Applies to:** All uses of “order” in this framework  
 **Status:** Frozen at MAJOR version v0.x
 
@@ -13,9 +13,16 @@ This document defines **first-, second-, and third-order organization** in a way
 - categorical (not gradual or scalar),
 - independent of scale, complexity, or substrate,
 - resistant to collapse or reinterpretation,
-- sufficient to classify biological, cognitive, artificial, and physical systems.
+- sufficient to classify **ordering-relevance regimes and representational requirements**
+  across physical, engineered, and biological **subsystems and motifs**.
 
 These definitions are **structural**, not phenomenological.
+
+**Scope note (2026):** This repository defines the Σ₂ structural layer only.
+While biological and cognitive systems may contain Σ₂-type phenomena, organism-level
+biology and cognition require higher-order closure beyond Σ₂ (provisionally Σ₅+).
+Accordingly, this document does not certify organism-level biological or cognitive
+classification. See `SIGMA_ORDER_SCOPE_CORRECTION_2026.md` for the normative scope statement.
 
 ---
 
@@ -24,6 +31,7 @@ These definitions are **structural**, not phenomenological.
 ### 2.1 Order is not scale
 
 Order does **not** refer to:
+
 - size (micro vs. macro),
 - number of components,
 - computational complexity,
@@ -37,16 +45,21 @@ A small system may be higher order than a large one.
 ### 2.2 Order is not descriptive convenience
 
 Order is not an epistemic label or modeling choice.  
-It reflects the **minimal ontological structure required for persistence of function under admissible perturbation**.
+It reflects the **minimal ontological structure required for persistence of function
+under admissible perturbation**.
 
 ---
 
 ### 2.3 Formal definition of order
 
 **Definition (Order):**  
-The order of a system is defined by the *lowest-level primitive required to specify persistence of function*.
+The order of a system is defined by the *lowest-level primitive required to specify
+persistence of function*.
 
 This definition is **exclusive and exhaustive**.
+
+This definition applies structurally and does not certify biological or cognitive
+sufficiency at the Σ₂ layer.
 
 ---
 
@@ -148,6 +161,7 @@ It consists of:
 - trajectory-sensitive organization.
 
 Second-order time:
+
 - need not be monotonic,
 - need not be global,
 - need not map injectively to first-order time.
@@ -164,6 +178,7 @@ Second-order systems necessarily instantiate a **space-like analog** enabling:
 - basin structure and selection.
 
 This space is:
+
 - relational, not metric,
 - topological, not extended,
 - implicit and unrepresented at second order.
@@ -184,36 +199,35 @@ Any such interpretation is incompatible.
 
 ---
 
-## 5. Third-order organization
+## 5. Third-order organization (structural definition only)
+
+**Status:** Structural definition provided for completeness only.  
+**Non-normative at the Σ₂ layer.**
 
 ### 5.1 Definition
 
 A system is **third order** if and only if:
 
 1. It contains second-order organization, and
-2. It represents elements of that organization as objects of cognition or control.
+2. It represents elements of that organization as objects of internal control,
+   manipulation, or reasoning.
 
-Third order is **representation of organization**.
+Third order is **representation of organization**, not merely organization itself.
+
+This definition establishes structural relationships between orders but does
+not certify biological or cognitive classification within this repository.
 
 ---
 
-### 5.2 Core properties
+### 5.2 Core properties (structural)
 
 Third-order systems exhibit:
 
-- explicit modeling of internal trajectories,
-- navigation of organizational space,
-- decoupling from immediate drive,
-- symbolic manipulation or abstraction,
-- meta-stability across contexts.
+- internal representation of trajectory-conditioned organization,
+- manipulation of organizational structure as objects,
+- decoupling from immediate trajectory enforcement.
 
----
-
-### 5.3 Spatiality of ideas
-
-The experienced spatial arrangement of ideas belongs **exclusively** to third order.
-
-Second-order organization may have space-like structure, but it is not experienced as space.
+These properties are defined structurally and do not imply any specific substrate.
 
 ---
 
@@ -226,7 +240,7 @@ Occurs when:
 - persistence or function can no longer be specified by state alone,
 - trajectory dependence becomes causally relevant.
 
-This transition does **not** require reflection, representation, or awareness.
+This transition does **not** require representation, awareness, or cognition.
 
 ---
 
@@ -234,10 +248,9 @@ This transition does **not** require reflection, representation, or awareness.
 
 Occurs when:
 
-- the system represents its own second-order structure,
-- internal trajectories become manipulable objects.
+- organizational structure itself becomes internally manipulable.
 
-This transition is discrete, not gradual.
+This definition is structural and does not certify organism-level biological or cognitive transitions within this repository.
 
 ---
 
@@ -255,9 +268,9 @@ Rules:
 
 ## 8. Classification constraint
 
-A system must be classified by the **highest order required for correct description**.
+A system must be classified by the **highest order required for correct structural description of its persistence and organization**.
 
-If second-order structure is required to explain behavior, the system is second order even if first-order descriptions are locally valid.
+This classification rule applies structurally and does not imply organism-level biological or cognitive sufficiency within the Σ₂ layer.
 
 ---
 
@@ -266,18 +279,21 @@ If second-order structure is required to explain behavior, the system is second 
 The following are forbidden:
 
 - redefining order as complexity or intelligence,
-- collapsing second order into subjective or experiential time,
-- attributing third-order properties to second-order systems,
+- collapsing second order into refined clock time,
+- treating second-order structure as stored representation,
+- attributing higher-order sufficiency without explicit structural justification,
 - skipping order definitions in downstream work.
 
 ---
 
 ## 10. Status
 
-These definitions are **foundational**.
+These definitions are **foundational for the Σ₂ structural layer**.
 
 Any extension or application must:
-- use these definitions verbatim,
-- or explicitly declare incompatibility.
 
-No reinterpretation is permitted without a MAJOR version change.
+- use these definitions verbatim, or
+- explicitly declare incompatibility.
+
+Interpretation of organism-level biology or cognition requires higher-order
+framework layers beyond Σ₂.
