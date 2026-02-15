@@ -175,12 +175,23 @@ The first instantiation is not privileged by repetition.
 
 ---
 
-## 9. Relation to orders of mind
+## 9. Relation to orders of mind (non-normative)
 
-- Second-order mind requires embodiment but not representation.
-- Third-order mind requires embodiment plus representation of second-order structure.
+**Status:** Non-normative contextual note (not part of the Σ₂ formal contract)
 
-Embodiment alone does not imply mind.
+This repository defines **Σ₂** as *constraint geometry over admissible trajectories* under embodiment.
+Subsequent development of the sigma-order program clarifies that:
+
+- organism-level biology requires higher-order closure (provisionally **Σ₅+**),
+- cognition / reflective awareness are treated as higher still,
+- therefore this repository does **not** certify any “orders of mind” taxonomy.
+
+Accordingly, any cognitive-language interpretation must be treated as **illustrative only** and must not be used to infer sufficiency claims about biology or cognition.
+
+For the normative scope statement, see `SIGMA_ORDER_SCOPE_CORRECTION_2026.md`.
+
+Historical discussion of “second- vs third-order mind” is retained only for provenance in
+`05_MIND_2ND_VS_3RD_ORDER.md`, which is now labeled **ARCHIVAL (superseded)** and should not be treated as normative.
 
 ---
 
