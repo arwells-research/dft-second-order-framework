@@ -1,44 +1,53 @@
 # Unifying Generative Model for Σ₂ Mappings
 
-**Document role:** Mechanistic unifier (non-axiomatic, explanatory)  
-**Status:** Stable (may be extended with additional instantiations)  
+**Document role:** Explanatory structural model (non-axiomatic)  
+**Status:** Stable explanatory construct (interpretive; non-normative)  
 **Depends on:**  
 - 03_SECOND_ORDER_SPACE_SIGMA2.md  
 - 09_MAPPING_MOLECULAR_PHENOMENA_TO_SIGMA2.md  
 - 10_PROTO_SECOND_ORDER_SYSTEMS.md  
 
+**Scope clarification (2026):** This document describes a **minimal structural model that generates Σ₂-type trajectory-gating phenomena**. It does **not** claim sufficiency for organism-level biological organization or cognition. In the current sigma-order program, biological organization requires higher-order closure (provisionally Σ₅+). This model captures **Σ₂-level organizational motifs only**. See `SIGMA_ORDER_SCOPE_CORRECTION_2026.md` for the normative scope statement.
+
 ---
 
 ## 1. Purpose
 
-This document presents a **single minimal generative model** that explains why the
-distinct molecular phenomena mapped in `09_MAPPING_MOLECULAR_PHENOMENA_TO_SIGMA2.md`
-all fall naturally under the Σ₂ framework.
+This document presents a **single minimal structural model** that explains why the
+distinct molecular and dynamical phenomena mapped in
+`09_MAPPING_MOLECULAR_PHENOMENA_TO_SIGMA2.md`
+naturally exhibit Σ₂-type ordering relevance.
 
 The goal is not to introduce new physics, but to show that a **common structural
 mechanism**—when instantiated under different parameterizations and embodiments—
-produces all observed cases.
+produces all known Σ₂-type organizational motifs.
 
 This model answers the question:
 
-> *What is the simplest dynamical structure that makes all Σ₂-relevant molecular
-phenomena unsurprising?*
+> *What is the simplest dynamical structure capable of producing trajectory-gated,
+ordering-sensitive admissibility geometry consistent with Σ₂?*
+
+This model is intended as a **unifying structural explanatory aid**, not a complete
+organizational theory.
 
 ---
 
 ## 2. Core claim
 
-All mapped molecular phenomena arise from:
+All mapped Σ₂-type phenomena arise from:
 
-> **Constraint-mediated, conditional transduction of first-order interactions
-into a low-dimensional geometry of admissible trajectories, with ordering-sensitive
+> **Constraint-mediated, conditional transduction of first-order dynamics into
+a low-dimensional geometry of admissible trajectories, with ordering-sensitive
 composition of transformations.**
 
-This is realized by a single class of dynamical systems with:
+This structure emerges from dynamical systems possessing:
+
 - a first-order configuration state,
 - a constrained organizational coordinate,
-- a gate that makes dynamics conditional,
-- and an embodiment regime that controls stability.
+- a gate that makes interactions conditionally effective,
+- and an embodiment regime controlling admissibility and persistence.
+
+This claim is structural, not substrate-specific.
 
 ---
 
@@ -50,14 +59,15 @@ Let:
 
     x(t) ∈ X ⊂ ℝⁿ
 
-represent the instantaneous first-order configuration:
+represent instantaneous first-order configuration:
+
 - atomic positions,
 - conformational coordinates,
-- populations,
+- population states,
 - voltages,
-- or other local physical variables.
+- or other physical variables.
 
-This space is state-complete only at first order.
+This space is causally complete only for first-order descriptions.
 
 ---
 
@@ -68,13 +78,15 @@ Let:
     σ(t) ∈ F
 
 be a **collective organizational coordinate**, where F may be:
-- S¹ (phase / winding),
-- a discrete set (basins, coordination modes),
+
+- S¹ (phase or winding coordinate),
+- a discrete set (basins or coordination modes),
 - a simplex (mode weights),
 - or a low-dimensional manifold.
 
 σ is not a stored representation.
-It is an *organizational mode selector*.
+
+It is an **organizational coordinate that conditions admissibility**, not a symbolic or stored entity.
 
 ---
 
@@ -86,35 +98,41 @@ The minimal coupled dynamics are:
     σ-dot = Ω(x, σ) + ξ(t)
 
 where:
-- f(x) is baseline first-order dynamics,
-- g(x, σ) is a conditional transduction term,
-- Ω(x, σ) governs organizational transport,
-- η, ξ represent noise consistent with embodiment E.
+
+- f(x) represents baseline first-order dynamics,
+- g(x, σ) represents conditional transduction,
+- Ω(x, σ) governs organizational coordinate transport,
+- η, ξ represent embodiment-consistent noise.
+
+These dynamics introduce trajectory dependence without introducing new physical degrees of freedom beyond embodiment-grounded interaction.
 
 ---
 
 ## 5. The essential structure: conditional transduction (the gate)
 
-The unifying structural element is that:
+The defining structural element is:
 
     g(x, σ) = G(σ) · u(x)
 
 where:
+
 - G(σ) ≈ 0 over most of F,
-- G(σ) ≈ 1 only in narrow regions of F,
-- u(x) is an ordinary first-order drive or interaction.
+- G(σ) ≈ 1 only within restricted regions,
+- u(x) represents ordinary first-order drive.
 
-### Interpretation
+### Structural interpretation
 
-- Most of the time, first-order interactions dissipate or cancel.
-- Only when σ lies in specific regions does interaction become effective.
-- This creates **selective responsiveness** without storage.
+Most first-order interactions dissipate or cancel unless organizational conditions
+permit effective coupling.
 
-This single gate explains:
-- resonance,
-- phase-localized work,
-- sequence dependence,
-- and fragility vs robustness of organization.
+This creates:
+
+- selective responsiveness,
+- trajectory-conditioned interaction,
+- ordering dependence,
+- and admissibility structure.
+
+This gating structure produces Σ₂-type organization without invoking storage or representation.
 
 ---
 
@@ -125,127 +143,140 @@ A trajectory γ = (x(t), σ(t)) is admissible iff:
     Adm(γ; E) = 1
 
 where embodiment E specifies:
-- energy throughput regime,
-- dissipation and noise bounds,
-- coupling constraints,
-- structural persistence limits.
 
-The same dynamical equations may instantiate:
-- proto-second-order behavior under one E,
-- or true second-order behavior under another.
+- energy throughput,
+- dissipation bounds,
+- noise limits,
+- coupling constraints,
+- structural persistence requirements.
+
+Different embodiment regimes produce:
+
+- proto-second-order behavior (weak stabilization),
+- or sustained second-order behavior (persistent stabilization),
+
+without changing the structural model.
 
 ---
 
 ## 7. Transformations and noncommutativity
 
 Let τ₁, τ₂ be admissible transformations, such as:
-- binding events,
-- parameter pulses,
-- configuration excursions,
-- mode perturbations.
+
+- configuration perturbations,
+- interaction events,
+- parameter changes,
+- or environmental influences.
 
 Each transformation acts as:
 
     τ_k : (x, σ) ↦ (x, σ) + (Δx_k(x, σ), Δσ_k(x, σ))
 
-Because Δx_k and Δσ_k depend on (x, σ), and because g(x, σ) is gated:
+Because transformation effects depend on organizational coordinate σ:
 
     τ₂ ∘ τ₁ ≠ τ₁ ∘ τ₂   (in general)
 
-This **noncommutativity** is the source of:
-- order sensitivity,
-- path dependence,
-- holonomy.
+This ordering dependence produces:
+
+- trajectory sensitivity,
+- noncommutativity,
+- and admissibility structure.
 
 ---
 
-## 8. Holonomy as trajectory memory
+## 8. Holonomy as trajectory dependence
 
-Closed loops in first-order configuration space (or closed compositions of τ)
-can return x to its original equivalence class while shifting σ:
+Closed transformation loops may satisfy:
 
     (x₀, σ₀) → loop → (x₀, σ₁),   σ₁ ≠ σ₀
 
-This is:
-- memory without storage,
-- history without representation,
-- organization without repositories.
+This produces:
+
+- trajectory-dependent organizational state,
+- history sensitivity without storage,
+- constraint-mediated persistence.
+
+This is a structural consequence of admissibility geometry.
 
 ---
 
-## 9. Proto-second-order vs second-order regimes
+## 9. Proto-second-order vs stabilized second-order regimes
 
-The same model spans regimes:
+The same structural model supports multiple regimes:
 
 ### Proto-second-order
+
 - σ exists but is weakly stabilized,
-- noise ξ(t) rapidly erases organizational differences,
-- ordering effects are present but transient.
+- noise rapidly erodes organizational differentiation,
+- ordering relevance is transient.
 
-### Second-order
+### Stabilized second-order
+
 - σ is persistently stabilized,
-- energy is expended to maintain σ,
-- organizational modes influence future admissibility.
+- energy throughput maintains organizational structure,
+- admissibility geometry influences future evolution.
 
-The difference is **embodiment**, not model structure.
-
----
-
-## 10. How this model explains all 09 mappings
-
-Each phenomenon in `09_MAPPING_MOLECULAR_PHENOMENA_TO_SIGMA2.md` corresponds to:
-
-- a choice of F (organizational coordinate),
-- a shape of G(σ) (gate geometry),
-- an interpretation of u(x),
-- and an embodiment regime E.
-
-No new mechanisms are required.
-
-All cases reduce to:
-> **constraint-mediated, gated transduction with ordering-sensitive composition.**
+The distinction arises from embodiment, not model structure.
 
 ---
 
-## 11. What this model does *not* assume
+## 10. Relationship to mapped phenomena
+
+Each phenomenon in `09_MAPPING_MOLECULAR_PHENOMENA_TO_SIGMA2.md`
+corresponds to:
+
+- a specific choice of organizational coordinate F,
+- a particular gating geometry G(σ),
+- a particular embodiment regime E.
+
+This model provides a structural unification of Σ₂-type phenomena.
+
+It does **not** assert sufficiency for organism-level biological organization or cognition.
+
+---
+
+## 11. What this model does not assume
 
 This model does not assume:
-- hidden fields,
-- disembodied repositories,
-- symbolic storage,
-- teleology,
-- violations of conservation laws.
 
-All ordering arises from:
-- constraints,
-- dynamics,
-- and admissibility.
+- hidden fields,
+- symbolic storage,
+- disembodied repositories,
+- teleological drives,
+- or violation of conservation laws.
+
+All organizational structure arises from:
+
+- embodiment,
+- admissibility,
+- and constraint-mediated interaction.
 
 ---
 
-## 12. Why this matters
+## 12. Structural role in the Σ₂ framework
 
-This unifying model shows that:
+This model serves as:
 
-- the Σ₂ framework is not a collection of metaphors,
-- molecular “special properties” are not ad hoc,
-- and second-order organization is a **natural extension** of structured first-order dynamics.
+- a minimal structural generator of Σ₂-type admissibility geometry,
+- a unifying explanatory structure,
+- a diagnostic reference model.
 
-It provides a single explanatory spine behind the mappings in `09_`.
+It does not introduce new axioms or extend the formal definition of Σ₂.
+
+It captures **Σ₂-level organizational motifs only**.
+
+Higher-order biological or cognitive organization requires additional structural layers beyond this model.
 
 ---
 
 ## 13. Status
 
-This document is explanatory and unifying.
+This document is explanatory and integrative.
 
 It:
-- introduces no new axioms,
-- preserves all constraints of the core framework,
-- and provides a generative mechanism that subsumes known molecular cases.
 
-Future extensions may add:
-- explicit parameterized examples,
-- analytic reductions,
-- or numerical instantiations,
-while preserving the same underlying structure.
+- introduces no new axioms,
+- preserves all formal constraints of the Σ₂ layer,
+- and provides a structural explanatory model consistent with admissibility-based organization.
+
+Future extensions must preserve the structural meaning of Σ₂ and must not introduce biological or cognitive sufficiency claims.
