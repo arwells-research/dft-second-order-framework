@@ -92,12 +92,12 @@ Only first-order dynamics admit complete instantaneous-state closure in principl
 
     dft-second-order-framework/
     ├── README.md
+    ├── SIGMA_ORDER_SCOPE_CORRECTION_2026.md
     ├── 00_SCOPE_AND_STATUS.md
     ├── 01_PRIMITIVES_AND_AXIOMS.md
     ├── 02_ORDERS_OF_ORGANIZATION.md
     ├── 03_SECOND_ORDER_SPACE_SIGMA2.md
     ├── 04_EMBODIMENT_AND_INSTANTIATION.md
-    ├── 05_MIND_2ND_VS_3RD_ORDER.md
     ├── 06_SHARED_STRUCTURE_NO_REPOSITORIES.md
     ├── 07_FORMAL_CONSTRUCTIONS/
     │   ├── fiber_bundle_model.md
@@ -112,12 +112,20 @@ Only first-order dynamics admit complete instantaneous-state closure in principl
     │   ├── oscillator_phase_gate_demo.py
     │   ├── toy_md_viability_sigma2.py
     │   └── toy_md_viability_sigma2_note.md
+    ├── 09_MAPPING_MOLECULAR_PHENOMENA_TO_SIGMA2.md
+    ├── 10_PROTO_SECOND_ORDER_SYSTEMS.md
+    ├── 11_NUMERICAL_TEST_TEMPLATES.md
+    ├── 12_CASE_STUDY_INTERFACE.md
+    ├── 13_UNIFYING_GENERATIVE_MODEL_FOR_SIGMA2_MAPPINGS.md
     ├── second_order_organization_admissible_trajectories.tex
     ├── docs
+    │   ├── archival
+    │   │   └── ARCHIVAL_MIND_2ND_VS_3RD_ORDER.md
     │   └── position
     │       ├── POSITION_RELATION_TO_BIOLOGICAL_COMPUTATIONALISM.md
     │       └── POSITION_RELATION_TO_ENACTIVISM_AND_DYNAMICAL_SYSTEMS.md
     ├── make_paper.sh
+    ├── CITATION.cff
     ├── LICENSE
     └── PAPER_LICENSE.md
 
