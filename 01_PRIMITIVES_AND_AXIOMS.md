@@ -4,7 +4,15 @@ This document defines the minimal formal commitments of the Dual-Frame Theory
 second-order framework. All subsequent constructions must respect these
 primitives, axioms, and prohibitions.
 
-This document is normative.
+This document is normative for the definition of **Σ₂ (second-order organization)**.
+
+**Scope note (2026):** This repository defines Σ₂ as a formal layer: constraint
+geometry over admissible trajectories grounded by embodiment. It does **not**
+certify organism-level biology or cognition. Subsequent development of the
+sigma-order program treats biological organization as requiring higher-order
+closure (provisionally Σ₅+) and cognition as higher still. Any references to
+“mind” or cognition in this document are strictly contextual and non-normative.
+See `SIGMA_ORDER_SCOPE_CORRECTION_2026.md` for the normative scope statement.
 
 ---
 
@@ -34,6 +42,9 @@ They exist as invariances that coherent processes satisfy.
 - **Third order:** persistence requires representation of trajectories themselves  
 
 Order is not scale, complexity, hierarchy, or refinement.
+
+This definition applies structurally and does not certify substrate-specific
+biological or cognitive sufficiency.
 
 ---
 
@@ -139,19 +150,26 @@ Second-order dynamics are causally inert without embodiment.
 
 ---
 
-## Orders of mind
+## Relation to orders of mind (non-normative, archival context)
 
-### Second-order mind
-- selects among admissible trajectories
-- operates via attractors and constraint satisfaction
-- does not represent its own organization as objects
+**Status:** Non-normative contextual note (not part of the Σ₂ formal contract)
 
-### Third-order mind
-- represents second-order structure explicitly
-- treats trajectories and constraints as objects of reasoning
-- exhibits meta-awareness and symbolic navigation
+Earlier internal versions of this framework introduced terminology such as
+“second-order mind” and “third-order mind” to describe structural relationships
+between trajectory-conditioned organization and representational access to that
+organization.
 
-The experienced spatiality of ideas belongs to third order, not second.
+Subsequent development of the sigma-order program clarifies that:
+
+- organism-level biology requires higher-order closure (provisionally Σ₅+),
+- cognition and reflective awareness are treated as higher still,
+- therefore this repository does **not** certify any taxonomy of mind or cognition.
+
+These earlier terms are retained only for historical continuity and must not be
+interpreted as sufficiency claims.
+
+The archival discussion appears in `05_MIND_2ND_VS_3RD_ORDER.md` and is marked
+superseded.
 
 ---
 
@@ -169,7 +187,10 @@ The following are explicitly forbidden within this framework:
 
 ## Status
 
-These primitives and axioms are foundational.
+These primitives and axioms are foundational for the definition of Σ₂.
 
 Any model, theory, or application that violates them is not compatible
 with this framework.
+
+Interpretation of biological or cognitive organization requires higher-order
+framework layers beyond Σ₂.
