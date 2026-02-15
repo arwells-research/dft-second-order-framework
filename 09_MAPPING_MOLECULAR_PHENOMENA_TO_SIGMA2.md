@@ -1,217 +1,151 @@
 # Mapping Molecular Phenomena to Σ₂
 
-**Document role:** Interpretive mapping (non-axiomatic)  
-**Status:** Stable (may be extended with additional examples)  
-**Depends on:**  
-- 01_PRIMITIVES_AND_AXIOMS.md  
-- 02_ORDERS_OF_ORGANIZATION.md  
-- 03_SECOND_ORDER_SPACE_SIGMA2.md  
+**Document role:** Interpretive mapping / integrative taxonomy  
+**Status:** Non-normative (must not introduce new axioms)  
+**Scope:** Molecular and proto-organizational systems
 
 ---
 
 ## 1. Purpose
 
-This document maps **well-established molecular phenomena** onto the Σ₂ framework
-to demonstrate that second-order organization:
+This document maps familiar molecular and mesoscale physical phenomena into
+the Σ₂ framework defined in:
 
-- is already implicit in known chemistry and biophysics,
-- does not require new physics,
-- and unifies disparate phenomena under a single organizational principle.
+- 03_SECOND_ORDER_SPACE_SIGMA2.md
+- 10_PROTO_SECOND_ORDER_SYSTEMS.md
+- second_order_organization_admissible_trajectories.tex
 
-The goal is **unification**, not reinterpretation of empirical results.
+The purpose is to:
 
----
+- demonstrate that Σ₂ is not exotic,
+- show how ordering relevance arises naturally under embodiment,
+- and provide a structured vocabulary for diagnosing proto-second-order systems.
 
-## 2. Unifying principle (restated)
-
-All mapped phenomena instantiate the same underlying mechanism:
-
-> **Persistent relational constraints transduce first-order interactions into a
-restricted, repeatable geometry of admissible trajectories.**
-
-In Σ₂ terms:
-- constraints reduce dimensionality,
-- admissibility geometry emerges,
-- ordering of transformations becomes causally relevant.
+This is not a biological model and makes no claims about life as such.
 
 ---
 
-## 3. Canonical mapping template
+## 2. Mapping principle
 
-For each phenomenon, we identify:
+A phenomenon qualifies as Σ₂-relevant if:
 
-- **X** — first-order configuration variables  
-- **σ (Sigma₂ fiber variable)** — organizational mode  
-- **Constraints** — what stabilizes σ  
-- **Order relevance** — where noncommutativity / holonomy appears  
-
-This keeps the mapping disciplined and non-metaphorical.
+- outcomes depend on ordering of interactions,
+- viability depends on trajectory history,
+- and this dependence is not eliminable by instantaneous-state closure under the
+  embodiment constraints.
 
 ---
 
-## 4. Vibrational / rotational / electronic resonance
+## 3. Summary table (high-level)
 
-### Description (standard science)
-Molecules exhibit discrete collective modes that absorb energy selectively
-(IR, microwave, UV–vis spectroscopy).
+(See sections below for full mappings.)
 
----
-
-### Σ₂ mapping
-- **X:** instantaneous nuclear coordinates and electronic populations  
-- **σ:** active collective mode (normal-mode occupancy / phase relation)  
-- **Constraints:** bonding geometry couples atomic DOFs into global modes  
+- allosteric gating → admissible trajectory selectivity
+- conformational hysteresis → proto-holonomy
+- resonance bandwidth selection → gate geometry in phase
+- cyclic molecular motors → phase-gated admissibility
+- selective transport / ratchets → ordering relevance under dissipation
 
 ---
 
-### Order relevance
-- Energy input sequence matters (mode locking, anharmonic coupling).
-- Structured inputs are selectively amplified rather than dissipated.
+## 4. Allostery as admissible trajectory gating
 
-This is **dimensional reduction of admissible motion**, not mere energy storage.
+Allosteric enzymes exhibit:
 
----
+- multiple conformational regimes,
+- binding events that depend on prior binding history,
+- and sequence-dependent outcomes.
 
-## 5. Conformational landscapes and hysteresis
+Within Σ₂:
 
-### Description
-Molecules (especially proteins) occupy metastable basins connected by pathways
-with barriers and path-dependent switching.
+- the admissibility predicate selects trajectories that enter binding-effective
+  conformations for sufficient duration,
+- and ordering relevance is induced by constraint-mediated coupling.
 
----
-
-### Σ₂ mapping
-- **X:** detailed atomic configuration  
-- **σ:** basin identity / conformational regime  
-- **Constraints:** sterics, bonding, solvent coupling  
+This is proto-second-order unless active cellular mechanisms stabilize conformer
+availability against noise.
 
 ---
 
-### Order relevance
-- Identical configurations can differ in future evolution depending on path.
-- Basin transitions exhibit hysteresis and memory-like effects.
+## 5. Hysteresis and conformational memory
 
-This is **holonomy in basin space**.
+Many molecules exhibit hysteresis loops:
 
----
+- path-dependent transitions between conformers,
+- distinct response curves under increasing vs decreasing drive.
 
-## 6. Allostery (sequence-dependent response)
+Within Σ₂:
 
-### Description
-Binding or modification at one site alters response at another, depending on
-the order of events.
+- hysteresis is proto-holonomy if loops alter future admissibility,
+- but remains proto-second-order if effects wash out immediately after driving ceases.
 
 ---
 
-### Σ₂ mapping
-- **X:** instantaneous molecular structure  
-- **σ:** coordination pattern linking distant sites  
-- **Constraints:** mechanical coupling across the molecule  
+## 6. Resonance as gate geometry
+
+Resonance phenomena can be seen as:
+
+- narrow regions of phase or frequency space where coupling becomes effective,
+- outside which energy input fails to couple or is dissipated.
+
+Within Σ₂:
+
+- gating emerges as a geometric consequence of constrained interaction under embodiment,
+  not as a new mechanism.
 
 ---
 
-### Order relevance
-Let τ₁ = binding at site A, τ₂ = binding at site B.
+## 7. Molecular motors as phase-gated transduction
 
-Both compositions are admissible, but:
+Molecular motors exhibit:
 
-    Outcome(τ₂ ∘ τ₁) ≠ Outcome(τ₁ ∘ τ₂)
+- cyclic action,
+- phase-dependent work extraction,
+- ordering dependence of binding, hydrolysis, and mechanical steps.
 
-This is explicit **noncommutativity of transformations**.
+Within Σ₂:
 
----
+- the “cycle” is a constrained trajectory class,
+- and viability is determined by entering phase windows with sufficient temporal coherence.
 
-## 7. Chirality and handedness biases
-
-### Description
-Chiral molecules interact asymmetrically with fields, substrates, and reactions,
-producing directional biases.
+Again, without active stabilization, these are proto-second-order.
 
 ---
 
-### Σ₂ mapping
-- **X:** atomic arrangement  
-- **σ:** handed organizational mode  
-- **Constraints:** asymmetric bonding geometry  
+## 8. Selective transport and ratchets
+
+Transport systems can exhibit:
+
+- directional motion in noisy environments,
+- path-dependent gating and state-dependent barriers.
+
+Within Σ₂:
+
+- the admissibility predicate enforces directional viability only for specific
+  trajectory classes.
 
 ---
 
-### Order relevance
-Chirality restricts admissible trajectory classes, breaking symmetry in
-organizational space.
+## 9. Noncommutativity across interventions
 
-It is **trajectory selection**, not just static shape.
+Ordering relevance can be tested via interventions such as:
 
----
+- applying a phase shift then an impulse,
+- applying an impulse then a phase shift.
 
-## 8. Molecular machines and motors
-
-### Description
-Systems like ATP synthase, kinesin, and ion pumps perform cyclic, gated work.
+If outcomes differ robustly under admissible perturbations, Σ₂ order relevance is
+operationally confirmed.
 
 ---
 
-### Σ₂ mapping
-- **X:** instantaneous mechanical and chemical state  
-- **σ:** phase / winding variable of the cycle  
-- **Constraints:** cyclic coupling of chemical and mechanical DOFs  
-
----
-
-### Order relevance
-- Work extraction is phase-localized.
-- Useful power arises from completing cycles, not from instantaneous force.
-
-Invariant quantity: **winding number**, not energy at an instant.
-
----
-
-## 9. Coherence and delocalization effects
-
-### Description
-Certain molecular systems maintain phase coherence across sites, affecting
-efficiency and dynamics.
-
----
-
-### Σ₂ mapping
-- **X:** local populations or amplitudes  
-- **σ:** relational phase structure  
-- **Constraints:** coupling topology and decoherence limits  
-
----
-
-### Order relevance
-Loss of coherence collapses admissibility geometry.
-Maintained coherence stabilizes a σ that governs outcomes.
-
-Again: **organization without storage**.
-
----
-
-## 10. What all cases share (summary)
-
-Across all examples:
-
-- Constraints persist across time.
-- Degrees of freedom are coupled.
-- Admissible trajectories form a small subset of possibilities.
-- Ordering of transformations matters.
-- Holonomy appears without stored state.
-
-These are exactly the defining features of Σ₂ relevance.
-
----
-
-## 11. Classification outcome
+## 10. Classification outcome
 
 All mapped phenomena qualify as:
 
 > **Proto-second-order systems**  
 > (nontrivial admissibility geometry without persistent σ stabilization).
 
-They form the **continuous bridge** from first-order chemistry to full
-second-order organization.
+They form a **continuous bridge** from first-order chemistry to **Σ₂-type organization motifs** (ordering relevance and trajectory-level admissibility geometry).
 
 ---
 
@@ -220,9 +154,11 @@ second-order organization.
 This mapping shows that Σ₂:
 
 - unifies known molecular phenomena,
-- explains continuity from chemistry to biology,
+- explains continuity from chemistry to **biological components and motifs** that exhibit ordering relevance,
 - avoids invoking repositories or hidden fields,
 - and provides a principled screen for candidate second-order systems.
+
+**Scope note:** This mapping does **not** claim Σ₂ sufficiency for biological organization. In the current sigma-order program, organism-level biology is treated as requiring higher-order closure (provisionally Σ₅+).
 
 No empirical claim is altered; only the organizational interpretation is unified.
 
@@ -235,6 +171,7 @@ This document is interpretive and integrative.
 It:
 - introduces no new axioms,
 - respects all constraints defined in 03_SECOND_ORDER_SPACE_SIGMA2.md,
-- and provides a template for mapping additional phenomena.
+- and provides a vocabulary for downstream case studies.
 
-Further extensions should follow the same mapping discipline.
+Any future revision must preserve the formal meaning of Σ₂ and must not introduce
+domain-specific sufficiency claims.

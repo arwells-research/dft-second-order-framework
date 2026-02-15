@@ -1,29 +1,30 @@
-# Case Study Interface for Σ₂ Framework
+# Σ₂ Case Study Interface (Domain-Agnostic)
 
-**Document role:** Interface specification (domain-agnostic)  
-**Status:** Stable (normative for downstream case studies)  
-**Depends on:**  
-- 03_SECOND_ORDER_SPACE_SIGMA2.md  
-- 10_PROTO_SECOND_ORDER_SYSTEMS.md  
-- 11_NUMERICAL_TEST_TEMPLATES.md  
+**Document role:** Interface contract for downstream case studies  
+**Status:** Normative (interface only; does not introduce new axioms)  
+**Applies to:** Any empirical, computational, or engineered case study claiming Σ₂ relevance
 
 ---
 
 ## 1. Purpose
 
-This document defines a **formal interface** for applying the Σ₂ framework to
-external systems (empirical, simulated, or engineered) **without modifying the
-core theory**.
+This document defines the **case study interface** for Σ₂.
 
 It specifies:
+
 - what a case study must declare,
-- how external dynamics map onto Σ₂ primitives,
-- how numerical or empirical tests relate to admissibility and order relevance,
+- what diagnostics must be evaluated,
+- what constitutes Σ₂ consistency,
+- what artifacts must be provided,
+- how embodiment is specified,
+- how ordering relevance is tested,
 - how results are classified.
 
 This document is **domain-agnostic**.  
 EEG, molecular simulations, oscillator models, AI systems, or devices must all
 enter the framework through this interface.
+
+**Scope note:** Domain mentions in this document (e.g., EEG, molecular simulation, AI) are **illustrative only**. This repository does not contain or endorse domain analyses; it defines the Σ₂ interface and diagnostic contracts that downstream case-study repositories must satisfy.
 
 ---
 
@@ -46,191 +47,94 @@ All downstream case studies must adhere to this interface to be considered
 
 ## 3. Required declarations (minimal schema)
 
-Any Σ₂ case study must explicitly declare the following elements.
+Any Σ₂ case study must explicitly declare the following:
 
-### 3.1 Embodiment class E
+1. **System description**
+   - What is the system?
+   - What are its controllable variables?
+   - What are the relevant degrees of freedom?
 
-The embodiment class E defines the **viability regime** under which trajectories
-are admissible.
+2. **Embodiment E**
+   - Noise sources and magnitudes
+   - Dissipation regimes
+   - Coupling constraints
+   - Resource limits
+   - Environmental interactions
 
-At minimum, E must specify:
-- noise class and amplitude bounds,
-- dissipation / throughput regime,
-- coupling constraints (what interactions are possible),
-- resource limits (time, energy, structure),
-- boundary conditions (environmental or experimental).
+3. **Candidate organizational coordinate(s)**
+   - What σ-like coordinates are hypothesized?
+   - How are they measured or inferred?
 
-E must be stated **before** any analysis.
+4. **Admissibility predicate**
+   - How is Adm(γ;E) defined?
+   - What constitutes a viable trajectory?
 
----
+5. **Interventions**
+   - What transformations are applied?
+   - What counts as admissible perturbation?
 
-### 3.2 First-order variables X
-
-The case study must define:
-- the first-order configuration variables \(x(t)\),
-- what constitutes an instantaneous state,
-- how equivalence of x is determined (exact, coarse-grained, tolerance-based).
-
-First-order completeness must be addressed explicitly:
-- either justified,
-- or acknowledged as approximate.
-
----
-
-### 3.3 Organizational proxy (σ observable)
-
-The case study must identify one or more **organizational proxies** corresponding
-to σ in Σ₂ language.
-
-σ proxies may be:
-- phase estimates,
-- basin identifiers,
-- coordination patterns,
-- mode occupancies,
-- relational statistics,
-- trajectory-derived features.
-
-Important:
-- σ proxies are **observables**, not assumed internal states.
-- The proxy must be justified as organizationally relevant.
+6. **Diagnostics**
+   - What Σ₂ diagnostics are computed?
+   - What controls are included?
 
 ---
 
-## 4. Transformations τ (process identification)
+## 4. Required diagnostics
 
-The case study must define what counts as an **admissible transformation τ**.
+A case study must evaluate, at minimum:
 
-Examples:
-- control pulses,
-- binding/unbinding events,
-- parameter excursions,
-- stimulus timing changes,
-- protocol segments.
+- **Ordering relevance / noncommutativity** (τ₂∘τ₁ ≠ τ₁∘τ₂)
+- **Holonomy-like effects** (closed loops altering future admissibility)
+- **Failed Markov closure** (state-sufficient modeling fails under admissible perturbations)
 
-Each τ must be:
-- admissible under E,
-- composable with other τ,
-- well-defined in time/order.
+Optional (recommended):
 
-Transformations must be named and documented.
+- stability/robustness of σ under perturbation,
+- maintenance costs (if claiming true second order).
 
 ---
 
-## 5. Outcome definition
+## 5. Controls
 
-The case study must define **Outcome** clearly.
+All case studies must include:
 
-Outcomes may include:
-- final-state statistics,
-- trajectory-class identity,
-- basin reachability,
-- threshold-crossing probability,
-- performance metrics.
-
-Outcome definitions must:
-- be robust to small perturbations,
-- reflect organizational consequences,
-- not collapse trivially to instantaneous state.
+- negative controls (first-order matched baselines),
+- perturbation tests under common random numbers (where applicable),
+- ablation of gating structures,
+- sensitivity to embodiment parameters.
 
 ---
 
-## 6. Mapping to Σ₂ numerical templates
+## 6. Classification outputs
 
-Each case study must state which Σ₂ templates are exercised:
+Each case study must report:
 
-- **T1:** Noncommutativity (ordering sensitivity)
-- **T2:** Holonomy (loop-induced organizational change)
-- **T3:** Same x, different future
-- **T4:** Failed Markov closure
-- **T5/T6:** Graph or manifold extraction (optional)
-
-At least one of T1–T3 must be meaningfully addressed to claim Σ₂ relevance.
+- whether Σ₂ ordering relevance is present,
+- whether effects persist under admissible perturbations,
+- whether σ stabilization is present (proto vs true),
+- and whether any claim exceeds Σ₂ scope.
 
 ---
 
-## 7. Robustness and admissibility check
+## 7. Artifact requirements
 
-For any claimed effect, the case study must demonstrate:
-- persistence under perturbations allowed by E,
-- non-fragility (effect does not vanish immediately),
-- repeatability across trials or realizations.
+A case study must provide:
 
-This establishes:
-\[
-\mathrm{Adm}(\gamma; E) = 1
-\]
-for the relevant trajectory class.
+- code and parameters sufficient to reproduce diagnostics,
+- fixed seeds and provenance hashes where applicable,
+- logs of interventions and outcomes,
+- raw data needed to recompute diagnostics.
 
 ---
 
-## 8. Order classification rule
+## 8. Status
 
-Based on results, the system must be classified as one of:
+This interface is intended to remain stable.
 
-- **First-order:**  
-  No noncommutativity or trajectory dependence beyond state.
+Changes must be:
 
-- **Proto-second-order:**  
-  Noncommutativity or holonomy exists but σ is weakly stabilized and fragile.
+- explicit,
+- versioned,
+- and backward-compatible where possible.
 
-- **Second-order:**  
-  σ is persistently stabilized and influences future admissibility robustly.
-
-Classification must be justified explicitly.
-
----
-
-## 9. Prohibited shortcuts and failure modes
-
-The following invalidate a Σ₂ case study:
-
-- implicit embodiment assumptions,
-- post hoc selection of σ proxies,
-- defining τ after observing outcomes,
-- conflating prediction accuracy with organization,
-- treating σ as stored representation.
-
-These are considered category errors.
-
----
-
-## 10. Relation to core framework
-
-This interface:
-- preserves trajectory primacy,
-- enforces embodiment indexing,
-- operationalizes admissibility,
-- and prevents collapse of Σ₂ into state augmentation.
-
-No case study may override core definitions.
-
----
-
-## 11. Usage pattern
-
-Recommended structure for downstream case studies:
-
-1. Declare E  
-2. Define X and σ proxy  
-3. Identify τ  
-4. Define Outcome  
-5. Apply T1–T4 tests  
-6. Evaluate robustness  
-7. Classify order  
-8. State limitations
-
-This pattern must be followed.
-
----
-
-## 12. Status
-
-This document completes the **conceptual interface layer** of the Σ₂ framework.
-
-It enables:
-- disciplined application to real systems,
-- comparison across domains,
-- cumulative scientific progress.
-
-Downstream work that does not conform to this interface
-is not considered Σ₂-grounded.
+No domain claims or sufficiency claims are permitted in this document.

@@ -19,6 +19,20 @@ It formalizes:
 - how embodiment grounds second-order organization without mysticism or reductionism
 - how **admissible trajectories** replace instantaneous state sufficiency when ordering matters
 
+
+## Sigma-order scope correction (2026)
+
+This repository defines **Σ₂** as a *formal* layer: **constraint geometry over admissible trajectories** with ordering relevance, grounded by embodiment and operational diagnostics.
+
+**Update:** Subsequent development of the sigma-order program clarifies that **biological organization is not modeled at Σ₂**. While biological systems can exhibit **Σ₂-type phenomena** (trajectory gating, ordering dependence, holonomy-like path effects) at the level of components and motifs, **full biological organization requires higher-order closure** (provisionally treated as **Σ₅+** in the current program).
+
+Accordingly:
+
+- Σ₂ is treated here as a **necessary lower layer**, not a sufficient model of biology or cognition.
+- Any mentions of biology, cognition, or AI in this repository are **illustrative** and must be read as **component-level / motif-level**, not as claims of organism-level sufficiency.
+
+For the normative statement of this correction, see `SIGMA_ORDER_SCOPE_CORRECTION_2026.md`.
+
 In addition to the formal framework, this repository includes a **minimal operational grounding artifact** demonstrating that Σ₂ diagnostics are measurable and behave as predicted in a controlled stochastic system.
 
 This repository is **not** an application, dataset, or domain-specific model. It exists to preserve **conceptual invariants** and **diagnostic criteria** so downstream work does not drift, collapse categories, or smuggle in hidden state.
